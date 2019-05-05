@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>hello</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="chamarApi()">
+    Chamar API
+  </ion-button>
+
+  <ul *ngIf="funcionarios">
+    <li *ngFor="let funcionario of funcionarios">
+      {{ funcionario.employee_name }} - {{ funcionario.employee_salary }}
+    </li>
+  </ul>
+</ion-content>
